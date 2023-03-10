@@ -2,6 +2,7 @@
   height: max-content;
   background-image: url("./assets/images/flamingo-bg.jpg");
   background-position: center;
+  background-repeat: no-repeat;
   background-position-x: -28vw ;
   background-position-y: -15vh ;
   background-color: var(--main-bg-color);

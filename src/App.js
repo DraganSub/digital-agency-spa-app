@@ -1,5 +1,10 @@
 import "./App.css";
-import { Navbar, HeroContent } from "./components";
+import {
+  Navbar,
+  HeroContent,
+  Services,
+  Works
+} from "./components";
 
 function App() {
   return (
@@ -7,6 +12,8 @@ function App() {
       <header className="hero--container">
         <Navbar />
         <HeroContent />
+        <Services />
+        <Works />
       </header>
     </div>
   );

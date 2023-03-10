@@ -1,0 +1,55 @@
+.works{
+  display: flex;
+  position: absolute;
+  top: calc(5rem + 5rem + 3rem + 1.1rem + 37px + 5rem);
+  width: 100%;
+  min-width: 100%;
+  left: 0;
+}
+
+.fix-height{
+  height: 32rem;
+}
+
+.work{
+  width: 100%;
+  height: 30rem;
+}
+
+.image-1,
+.image-2,
+.image-3,
+.image-4,
+.image-5,
+.image-6{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.image-1{
+  background-image: url("../../assets/images/watch.jpg");
+}
+
+.image-2{
+  background-image: url("../../assets/images/watch-2.jpg");
+}
+
+.image-3{
+  background-image: url("../../assets/images/headphones.jpg");
+}
+
+.image-4{
+  background-image: url("../../assets/images/laptop.jpeg");
+  background-position-x: -400px;
+
+}
+
+.image-5{
+  background-image: url("../../assets/images/watch-3.jpg");
+}
+
+.image-6{
+  background-image: url("../../assets/images/flamingo-bg.jpg");
+  background-position-x: -500px;
+}

@@ -1,0 +1,107 @@
+.hero-wrap{
+  display: flex;
+  max-width: 100%;
+  width: 65%;
+  height: fit-content;
+  margin: 5rem auto 0 auto;
+  padding-bottom: 4rem;
+  gap: 100px;
+}
+
+.hero-wrap__subtitle{
+  text-transform: uppercase;
+  color: var(--theme-font-color);
+  font-weight: 500;
+  font-size: 1.03rem;
+}
+
+.hero-wrap__title{
+  font-size: 5.2rem;
+  max-width: 50%;
+  margin-top: 1rem;
+  font-weight: 800;
+}
+
+.hero-wrap--btn{
+  max-width: fit-content;
+  max-height: 5rem;
+  padding: 1.7rem 2.1rem;
+  background: transparent;
+  color: var(--theme-font-color);
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border: 2px solid var(--theme-font-color);
+  transition: 1s ease-out;
+}
+
+.hero-wrap--btn:hover{
+  cursor: pointer;
+  background-color: var(--theme-font-color);
+  color:var(--primary-font-color);
+  font-weight: 600;
+  transition: 1s ease-in;
+}
+
+.hero--wrap__containers{
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+  padding-top: 5rem;
+  flex-flow: wrap;
+}
+
+.hero-box{
+  justify-content: space-evenly;
+  position: relative;
+  min-height:20rem;
+  height: fit-content;
+  max-width: 22rem;
+  background-color: var(--box-primary-color);
+  width: 80%;
+  padding: 0 1rem;
+  letter-spacing: 0.5px;
+}
+
+.box-active{
+  border: 2px solid var(--theme-font-color);
+}
+
+.hero-box.box-active::before{
+  content: "";
+  position: absolute;
+  width: 0.2rem;
+  height: 2.6rem;
+  bottom: -2.6rem;
+  left: 50%;
+  background-color: var(--theme-font-color);
+}
+
+.hero__box-icon{
+  font-size: 4rem;
+  padding: 2rem 1.5rem;
+  color: var(--theme-font-color);
+}
+
+.hero__box-title{
+  padding: 0 1.6rem;
+  letter-spacing: 1px;
+  font-size: 1.65rem;
+  position: relative;
+}
+
+.hero__box-title::after{
+  content:"";
+  position: absolute;
+  bottom: -1.5rem;
+  left: 1.65rem;
+  width: 4rem;
+  height: 3px;
+  background-color: var(--theme-font-color);
+}
+
+.hero__box-content{
+  padding: 1.65rem 1.65rem;
+  line-height: 1.65rem;
+}

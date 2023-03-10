@@ -3,7 +3,8 @@ import {
   Navbar,
   HeroContent,
   Services,
-  Works
+  Works,
+  About
 } from "./components";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <HeroContent />
         <Services />
         <Works />
+        <About />
       </header>
     </div>
   );

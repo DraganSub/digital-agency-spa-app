@@ -8,7 +8,7 @@ export default function About() {
       subTitle="we are more than digital agency"
       background="var(--services-bg-color)"
     >
-      <section class="about-container">
+      <section className="about-container">
         <div className="about-main">
           <div className="about-option--wrap">
             <div className="about-option__title">

@@ -11,7 +11,7 @@ export default function Services() {
       background="var(--services-bg-color)"
     >
       <section className="service-container">
-        {servicesData.map(service => <ServiceBox service={service} />)}
+        {servicesData.map(service => <ServiceBox key={service.title} service={service} />)}
       </section>
     </ContainerLayout>
   )

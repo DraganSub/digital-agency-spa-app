@@ -4,7 +4,9 @@
   --main-bg-color: #000000;
   --primary-font-color: #ffffff;
   --secondray-font-color: rgb(177, 174, 174);
+  --secondray-box-color: rgb(58, 58, 58);
   --theme-font-color:#5bede6;
+  --theme-secondary-font-color:#2e7c78;
   --box-primary-color:#181818;
   --services-bg-color:#08080C;
   --works-bg-color:#0c0d0c;
@@ -33,4 +35,8 @@ body {
 
 .justify-center{
   justify-content: center;
+}
+
+.align-center{
+  align-items: center;
 }

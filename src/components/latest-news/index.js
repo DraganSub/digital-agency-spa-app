@@ -1,0 +1,1 @@
+export { default as LattestNews } from "./LattestNews.jsx";

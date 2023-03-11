@@ -1,0 +1,62 @@
+.inquiry-container{
+  display: flex;
+  background-image:url("../../assets/images/bottom-bg.png") ;
+  gap: 1.3rem;
+  width: 100%;
+  height: fit-content;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  justify-content: center;  
+  flex-direction: column;
+  align-items: center;
+  padding: 8rem;
+}
+.inquiry-container::before{
+  content: "";
+  width: 4px;
+  height: 90px;
+  background: turquoise;
+  position: absolute;
+  top: -45px;
+
+}
+
+.inquiry-social__icons{
+  display: flex;
+  flex-direction: row;  
+  gap: 13px;
+  
+}
+.inquiry-social__icons > span{
+  font-size: 1.7rem;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px 5px 10px;
+  color: var(--theme-font-color);
+  border-radius: 50px;
+  border: 1px solid var(--theme-font-color);
+}
+
+.inquiry-container > h1{
+  font-size: 3.5rem;
+  color: white;
+}
+
+.inquiry-btn{
+  font-size: 1.5rem;
+  padding: 1rem;
+  background: transparent;
+  border: 1px solid var(--theme-font-color);
+  color: var(--theme-font-color);
+  text-transform: uppercase;
+  font-size: 1rem;
+  transition: 0.7s ease-in;
+}
+
+.inquiry-btn:hover{
+  cursor: pointer;
+  color: white;
+  background: var(--theme-font-color);
+  transition: 0.7s ease-out;
+}

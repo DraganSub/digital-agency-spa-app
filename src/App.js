@@ -3,8 +3,13 @@ import {
   Navbar,
   HeroContent,
   Services,
-  Works
+  Works,
+  About,
+  Testimonials,
+  LattestNews,
+  Footer
 } from "./components";
+import Inquiry from "./components/inquiry/Inquiry";
 
 function App() {
   return (
@@ -14,6 +19,11 @@ function App() {
         <HeroContent />
         <Services />
         <Works />
+        <About />
+        <Testimonials />
+        <LattestNews />
+        <Inquiry />
+        <Footer />
       </header>
     </div>
   );

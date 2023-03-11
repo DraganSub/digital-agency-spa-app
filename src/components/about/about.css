@@ -1,0 +1,117 @@
+.about-container{
+  display: grid;
+  width: 90%;
+  justify-content: center;
+  margin: auto;
+  grid-template-areas: 
+  "nav b"
+  "nav c"
+  "d d"
+  ;
+  gap: 20px;
+  grid-template-rows: 300px 300px 230px  ;
+  grid-template-columns: 50% 50%  ;
+}
+
+.about-main{
+  grid-area: nav;
+  background-image: url("../../assets/images/about-main.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: border-box;
+  background-blend-mode: multiply;
+  background-color: rgb(194, 190, 190);
+  background-position-x: 45%;
+  height: 100%;
+  position: relative;
+}
+
+.about-side--a{
+  grid-area: b;
+  background-image: url("../../assets/images/about-side-a.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: border-box;
+  background-blend-mode: multiply;
+  background-color: rgb(194, 190, 190);
+  background-position-x: 45%;
+  height: 100%;
+  position: relative;
+}
+
+.about-side--b{
+  grid-area: c;
+  background-image: url("../../assets/images/about-side-b.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: border-box;
+  background-blend-mode: multiply;
+  background-color: rgb(194, 190, 190);
+  background-position-x: 45%;
+  height: 100%;
+  position: relative;
+
+}
+
+.about-option__title{
+  font-size: 20px;
+  font-weight: 600;
+  padding: 7px 0px;
+}
+.about-option__desc{
+  font-size: 17px;
+  padding: 7px 0px;
+}
+
+.about-option--wrap{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 1.2rem;
+  letter-spacing: 0.4px;
+}
+
+.about-flex--group{
+  grid-area: d;
+}
+
+.about-flex--group{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.about-content--box{
+  padding: 1rem 2rem;
+  position: relative;
+}
+
+.about-content--box:nth-child(2)::before{
+  content: "";
+  width: 3px;
+  position: absolute;
+  height: calc(100% - 2rem);
+  left: 0rem;
+  background-color: var(--theme-font-color);
+}
+
+.about-content--content{
+  font-size: 16px;
+  color:var(--secondray-font-color);
+  letter-spacing: 1px;
+}
+
+.about-content--title{
+  font-size: 24px;
+}
+
+.about-content--box:nth-child(2)::after{
+  content: "";
+  width: 3px;
+  position: absolute;
+  height: calc(100% - 2rem);
+  right: 0;
+  top: 1rem;
+  background-color: var(--theme-font-color);
+}

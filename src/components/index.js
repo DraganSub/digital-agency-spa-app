@@ -2,3 +2,8 @@ export * from "./navbar";
 export * from "./hero";
 export * from "./services";
 export * from "./works";
+export * from "./about";
+export * from "./testimonials";
+export * from "./latest-news";
+export * from "./inquiry";
+export * from "./footer";

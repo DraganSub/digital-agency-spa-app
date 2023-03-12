@@ -63,7 +63,7 @@ export default function Footer() {
             </div>
             <div className="footer-botom__social">
               <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quasi, ut voluptate illum suscipit nobis quia dicta excepturi amet officia, dolorum consequuntur facilis odio.</h4>
-              <div class="footer-icons">
+              <div className="footer-icons">
                 <span><BsFacebook /></span>
                 <span><AiOutlineTwitter /></span>
                 <span><AiOutlineInstagram /></span>

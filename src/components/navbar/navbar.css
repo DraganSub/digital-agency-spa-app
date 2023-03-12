@@ -13,6 +13,7 @@
   font-size: 0.95rem;
   font-weight: 600;
   align-items: center;
+
 }
 
 .navbar--header-title{
@@ -61,8 +62,44 @@
 .nav-link--icon:hover{
   border: none;
 }
-
+.hamburger{
+  display: none;
+}
+.x-btn{
+  display: none;
+}
 .active{
   color:var(--secondray-font-color);
   border-bottom: 4px solid var(--theme-font-color);
+}
+
+@media screen and (max-width: 1280px)  {
+  .x-btn{
+    display: flex;
+    font-size: 2rem ;
+    color: var(--primary-font-color);
+    padding: 1rem;
+    justify-content: flex-end;
+    cursor: pointer;
+  }
+
+  .hamburger{
+    display: flex;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+  .nav-links{
+    position: fixed;
+    top: 0;
+    width: 70%;
+    max-width: 250px;
+    display: block;
+    height: 100vh;
+    z-index: 100;
+    background: var(--theme-secondary-font-color);
+    right: -2rem;
+  }
+
 }

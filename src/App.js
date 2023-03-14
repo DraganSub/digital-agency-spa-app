@@ -13,18 +13,21 @@ import Inquiry from "./components/inquiry/Inquiry";
 
 function App() {
   return (
-    <div className="app">
-      <header className="hero--container">
+    <div className="app hero--container">
+      <header>
         <Navbar />
         <HeroContent />
+      </header>
+      <main>
         <Services />
         <Works />
         <About />
         <Testimonials />
         <LattestNews />
         <Inquiry />
-        <Footer />
-      </header>
+      </main>
+      <Footer />
+
     </div>
   );
 }

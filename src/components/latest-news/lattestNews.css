@@ -3,7 +3,6 @@
   justify-content: center;
   padding: 3rem 0 10rem 0; 
   width: 100%;
-
 }
 
 .lattest-news__header{
@@ -82,3 +81,19 @@
   transition: 0.6s ease-out;
   cursor: pointer;
 }
+
+/* Tablet screens */
+@media screen and (min-width: 375px) and (max-width: 768px)  {}
+
+/* Mobile styling media queries */
+@media screen and (max-width: 375px)  {}
+@media screen and (max-width: 1280px)  {
+.lattest-news--wrap{
+  flex-direction: column;
+  padding: 2rem;
+  gap: 30px;
+}
+}
+
+/* Laptop styling media queries */
+@media screen and (min-width: 769px)  and (max-width: 1280px)  {}

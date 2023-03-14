@@ -53,3 +53,33 @@
   background-image: url("../../assets/images/flamingo-bg.jpg");
   background-position-x: -500px;
 }
+
+/* Tablet screens */
+@media screen and (min-width: 375px) and (max-width: 768px)  {
+  .image-3
+ {
+    display: none;  
+  }
+}
+
+/* Mobile styling media queries */
+@media screen and (max-width: 375px)  {
+  .works{
+  top: calc(10rem + 10rem + 3rem + 1.1rem + 37px + 5rem);
+  }
+
+  .work{
+    height: 25rem;
+  }
+
+.image-3,
+.image-5,
+.image-6{
+  display: none;  
+}
+}
+
+/* Laptop styling media queries */
+@media screen and (min-width: 769px)  and (max-width: 1280px)  {
+
+}

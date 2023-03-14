@@ -71,11 +71,9 @@
   letter-spacing: 0.4px;
 }
 
-.about-flex--group{
-  grid-area: d;
-}
 
 .about-flex--group{
+  grid-area: d;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -91,7 +89,8 @@
   content: "";
   width: 3px;
   position: absolute;
-  height: calc(100% - 2rem);
+  top: 2rem;
+  height: calc(100% - 4rem);
   left: 0rem;
   background-color: var(--theme-font-color);
 }
@@ -110,8 +109,98 @@
   content: "";
   width: 3px;
   position: absolute;
-  height: calc(100% - 2rem);
+  height: calc(100% - 4rem);
   right: 0;
-  top: 1rem;
+  top: 2rem;
   background-color: var(--theme-font-color);
+}
+
+
+/* Tablet screens */
+@media screen and (min-width: 375px) and (max-width: 768px)  {
+  .about-container{
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    margin: auto;
+    grid-template-areas: 
+    "nav nav"
+    "b c"
+    "d d"
+  
+    ;
+    grid-template-rows: 300px 300px min-content   ;
+    grid-template-columns: calc(50vw - 20px) calc(50vw - 20px)   ;
+  }
+
+  .about-flex--group{
+    flex-direction: column;
+    padding: 0 5rem;
+  }
+}
+
+/* Mobile styling media queries */
+@media screen and (max-width: 375px)  {
+  .about-container{
+    display: grid;
+    grid-template-areas: 
+    "nav nav"
+    "b b"
+    "c c"
+    "d d"
+    ;
+    gap: 20px;
+    grid-template-rows: 300px 300px 300px fit-content ;
+    grid-template-columns: 50vw 50%  ;
+  }
+
+  .about-content--box{
+    padding: 0;
+    text-align: center;
+  }
+  .about-content--title{
+    font-size: 25px;
+  }
+
+
+  .about-content--box:nth-child(2)::after{
+    content: none
+  }
+
+  .about-content--box:nth-child(2)::before{
+    content: none
+  }
+
+  .about-flex--group{
+    grid-area: d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 0;
+  }
+}
+
+/* Laptop styling media queries */
+@media screen and (min-width: 769px)  and (max-width: 1280px)  {
+  .about-container{
+    display: grid;
+    grid-template-areas: 
+    "nav nav"
+    "b c"
+    "d d"
+    ;
+    gap: 20px;
+    width: 100%;
+    grid-template-rows: 300px 300px fit-content ;
+    grid-template-columns: 50% 50%  ;
+    padding: 1rem 0;
+  }
+  
+  .about-content--box{
+    padding: 0rem 1.5rem;
+  }
+  .about-flex--group{
+    padding: 3rem 0;
+  }
 }

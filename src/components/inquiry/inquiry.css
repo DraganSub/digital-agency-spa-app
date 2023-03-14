@@ -11,6 +11,7 @@
   flex-direction: column;
   align-items: center;
   padding: 8rem;
+  text-align: center;
 }
 .inquiry-container::before{
   content: "";
@@ -60,3 +61,20 @@
   background: var(--theme-font-color);
   transition: 0.7s ease-out;
 }
+
+/* Tablet screens */
+@media screen and (min-width: 375px) and (max-width: 768px)  {}
+
+/* Mobile styling media queries */
+@media screen and (max-width: 375px)  {
+  .inquiry-container > h1{
+    font-size: 3rem;
+  }
+
+  .inquiry-container{
+    padding: 6rem 2rem;
+  }
+}
+
+/* Laptop styling media queries */
+@media screen and (min-width: 769px)  and (max-width: 1280px)  {}
